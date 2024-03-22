@@ -9,7 +9,7 @@ public class TestLogin {
     @Test
     public void logInTest(){
         ChromeOptions options = new ChromeOptions();
-//        options.addArguments("headless");
+        options.addArguments("headless");
 
         WebDriver driver = new ChromeDriver(options);
         driver.get("https://tutorialsninja.com/demo/index.php?route=account/login");
